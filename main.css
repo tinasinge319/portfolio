@@ -1,0 +1,826 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #003973, #e5e5be);
+}
+    
+header {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    background-color: #1d1d1dfc;
+}
+   
+nav {
+    overflow: hidden; 
+}
+    
+nav ul {
+    list-style: none;
+    justify-items: flex-start;
+    text-align: center;   
+}
+
+nav li {
+    display: inline;
+    padding-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(194, 184, 184);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+#headshot {
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+#introName {
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+#descriptiveWords {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.introDescription {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 14px;
+    color: rgb(44, 46, 123);
+}
+
+.button:hover {
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#portfolioHeading {
+    text-align: left;
+    font-family: 'Questrial', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.quizAppBox {
+    background-color: rgba(229, 232, 235, 0.776);
+    border-radius: 5px;
+}
+
+#quizAppScreenshot {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.featuredImageTitle {
+    text-align: left;
+    padding-left: 5px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+}
+
+.featuredImageDescription {
+    text-align: left;
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.toolsUsed {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.liveView {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    color: rgb(44, 46, 123);
+}
+
+.liveView:hover {
+    text-decoration: underline;
+}
+
+.viewCode {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    color: rgb(44, 46, 123);
+}
+
+.viewCode:hover {
+    text-decoration: underline;
+}
+
+.transoceanCaseStudyBox {
+    background-color: rgba(229, 232, 235, 0.776);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#transoceanScreenshot {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.stateFairBox {
+    background-color: rgba(229, 232, 235, 0.776);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#stateFairScreenshot {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.outdoorHomeCaseStudyBox {
+    background-color: rgba(229, 232, 235, 0.776);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#outdoorHomeScreenshot {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.shippingContainerTLMBox {
+    background-color: rgba(229, 232, 235, 0.776);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#shippingContainerTLMScreenshot {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.landRoverBox {
+    background-color: rgba(229, 232, 235, 0.776);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#landRoverScreenshot {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#aboutMeHeading {
+    text-align: left;
+    font-family: 'Questrial', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+#aboutMeImage {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.aboutMeDescription {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#contactHeading {
+    text-align: left;
+    font-family: 'Questrial', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.contactDescription {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+footer {
+    background-color: #1d1d1dfc;
+    height: 50px;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+}
+
+footer li {
+    display: inline;
+}
+
+footer a {
+    text-decoration: none;
+    padding-right: 50px;
+    color: white;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+        
+    header {
+        position: fixed;
+        top: 0;
+        height: 50px;
+        width: 100%;
+        left: 0; 
+    } 
+
+    nav {
+        overflow: hidden; 
+    }
+        
+    nav ul {
+        list-style: none;
+        justify-items: flex-start;
+        text-align: center;   
+    }
+    
+    nav li {
+        display: inline;
+        padding-right: 50px;
+        font-size: 25px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: rgb(194, 184, 184);
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .wrapHeadshot {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #headshot {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+    }
+
+    #introName {
+        text-align: center;
+        font-size: 52px;
+    }
+
+    #descriptiveWords {
+        text-align: center;
+        font-size: 38px;
+    }
+    
+    .introDescription {
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .button {
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgb(44, 46, 123);
+    }
+    
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #portfolioHeading {
+        font-size: 38px;
+    }
+
+    .quizAppBox {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 80%;
+    }
+    
+    #quizAppScreenshot {
+        width: 100%;
+        margin-top: 0px;
+    }
+    
+    .featuredImageTitle {
+        text-align: left;
+        font-size: 24px;
+        line-height: 30px;
+        padding-left: 5px;
+    }
+    
+    .featuredImageDescription {
+        text-align: left;
+        font-size: 20px;
+        line-height: 24px;
+        padding-left: 5px;
+    }
+
+    .toolsUsed {
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        text-align: left;
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+
+    .liveView {
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        text-align: left;
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+    
+    .viewCode {
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        text-align: left;
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+
+    .transoceanCaseStudyBox {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 80%;
+        border-radius: 5px;
+    }
+    
+    #transoceanScreenshot {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .stateFairBox {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 80%;
+        border-radius: 5px;
+    }
+    
+    #stateFairScreenshot {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .outdoorHomeCaseStudyBox {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 80%;
+        border-radius: 5px;
+    }
+
+    #outdoorHomeScreenshot {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .shippingContainerTLMBox {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 80%;
+        border-radius: 5px;
+    }
+    
+    #shippingContainerTLMScreenshot {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .landRoverBox {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 80%;
+        border-radius: 5px;
+    }
+    
+    #landRoverScreenshot {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #aboutMeHeading {
+        text-align: left;
+        font-size: 38px;
+    }
+
+    .aboutMeImage {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .wrapAboutMeImage {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .aboutMeDescription {
+        text-align: left;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    #contactHeading {
+        text-align: left;
+        font-size: 38px;
+    }
+
+    .contactDescription {
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 22px;
+    }
+    
+    footer {
+        background-color: #1d1d1dfc;
+        height: 50px;
+        width: 100%;
+    }
+    
+    footer ul {
+        list-style: none;
+        text-align: center;
+    }
+    
+    footer li {
+        display: inline;
+    }
+    
+    footer a {
+        text-decoration: none;
+        padding-right: 50px;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+        
+    header {
+        position: fixed;
+        top: 0;
+        height: 50px;
+        width: 100%;
+        left: 0;
+    } 
+
+    nav {
+        overflow: hidden; 
+    }
+        
+    nav ul {
+        list-style: none;
+        justify-items: flex-start;
+        text-align: center;  
+    }
+    
+    nav li {
+        display: inline;
+        padding-right: 50px;
+        font-size: 25px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: rgb(194, 184, 184);
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    #home {
+        position: relative;
+        z-index: -1;
+    }
+
+    #headshot {
+        position: relative;
+        width: 30%;
+        top: 20px;
+        left: 20%;
+    }
+
+    #introName {
+        position: relative;
+        margin-bottom: 0;
+        right: 19%;
+        bottom: 275px; 
+        font-size: 52px;
+    }
+
+    #descriptiveWords {
+        position: relative;
+        margin-top: 0;
+        right: 13%;
+        bottom: 250px;
+    }
+
+    .introDescription {
+        position: relative;
+        text-align: left;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        bottom: 100px;
+    }
+    
+    .button {
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgb(44, 46, 123);
+    }
+
+    hr {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    #portfolio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #portfolioHeading {
+        font-size: 38px;
+    }
+
+    .quizAppBox {
+        display: block;
+        margin-left: -80px;
+        margin-right: 50px;
+        margin-top: 100px;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 25%;
+    }
+    
+    #quizAppScreenshot {
+        width: 100%;
+        margin-top: 0px;
+    }
+    
+    .featuredImageTitle {
+        text-align: left;
+        font-size: 24px;
+        line-height: 30px;
+        padding-left: 5px;
+    }
+    
+    .featuredImageDescription {
+        text-align: left;
+        font-size: 20px;
+        line-height: 24px;
+        padding-left: 5px;
+    }
+
+    .toolsUsed {
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        text-align: left;
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+
+    .liveView {
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        text-align: left;
+        padding-right: 10px;
+        padding-left: 5px;
+        margin-bottom: 0px;
+    }
+    
+    .viewCode {
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        text-align: left;
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+
+    .transoceanCaseStudyBox {
+        display: block;
+        margin-left: auto;
+        margin-right: 50px;
+        margin-top: 100px;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 25%;
+    }
+    
+    #transoceanScreenshot {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .stateFairBox {
+        display: block;
+        margin-left: auto;
+        margin-right: 50px;
+        margin-top: 100px;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 25%;
+    }
+
+    #stateFairScreenshot {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .outdoorHomeCaseStudyBox {
+        display: block;
+        margin-left: 60px;
+        margin-right: 5px;
+        margin-top: 100px;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 25%;
+    }
+
+    #outdoorHomeScreenshot {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .shippingContainerTLMBox {
+        display: block;
+        margin-left: 120px;
+        margin-right: 5px;
+        margin-top: 100px;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 25%;
+    }
+    
+    #shippingContainerTLMScreenshot {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .landRoverBox {
+        display: block;
+        margin-left: 120px;
+        margin-right: 0px;
+        margin-top: 100px;
+        background-color: rgba(229, 232, 235, 0.776);
+        width: 25%;
+    }
+    
+    #landRoverScreenshot {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #aboutMeHeading {
+        text-align: left;
+        font-size: 38px;
+    }
+
+    .aboutDescription {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .wrapAboutMeImage {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .aboutMeDescription {
+        text-align: left;
+        font-size: 20px;
+        line-height: 24px;
+        width: 55%;
+        padding-right: 20px;
+        margin-top: 0;
+        bottom: 100px;
+    }
+
+    #contactHeading {
+        text-align: left;
+        font-size: 38px;
+    }
+
+    .contactDescription {
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+
+    footer {
+        background-color: #1d1d1dfc;
+        height: 50px;
+        width: 100%;
+    }
+    
+    footer ul {
+        list-style: none;
+        text-align: center;
+    }
+    
+    footer li {
+        display: inline;
+    }
+    
+    footer a {
+        text-decoration: none;
+        padding-right: 50px;
+        color: white;
+    }
+}
