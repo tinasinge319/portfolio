@@ -47,6 +47,8 @@ nav a:hover {
 
 #headshot {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     border-radius: 5px;
     border-color: transparent;
@@ -68,6 +70,14 @@ nav a:hover {
 }
 
 .introDescription {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.introTools {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -99,124 +109,153 @@ hr {
     line-height: 30px;
 }
 
-.quizAppBox {
-    background-color: rgba(229, 232, 235, 0.776);
-    border-radius: 5px;
-}
-
-#quizAppScreenshot {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.featuredImageTitle {
+#writingSamples {
     text-align: left;
-    padding-left: 5px;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-.featuredImageDescription {
+.grid-container-writing {
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-row-gap: 20px;
+}
+
+.grid-item-a {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.grid-item-b {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}
+
+.grid-item-c {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+}
+
+.grid-item-d {
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+}
+
+.grid-item-e {
+    grid-column: 1 / 1;
+    grid-row: 5 / 5;
+}
+
+.grid-item-f {
+    grid-column: 1 / 1;
+    grid-row: 6 / 6;
+}
+
+.grid-item-a:hover {
+    opacity: 0.5;
+}
+
+#webDev {
     text-align: left;
-    padding-left: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-.toolsUsed {
+.grid-container-webdev {
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-row-gap: 20px;
+}
+
+.grid-item-1 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.quizTitle {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px;
+}
+
+.quizDescription {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    font-family: 'Questrial', sans-serif;
     font-size: 14px;
-    text-decoration: none;
-    text-align: left;
-    padding-right: 10px;
-    padding-left: 5px;
-    font-family: 'Roboto', sans-serif; 
 }
 
-.liveView {
+.quizTools {
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+    font-family: 'Questrial', sans-serif;
     font-size: 14px;
+}
+
+.liveViewQuiz {
     text-decoration: none;
-    text-align: left;
-    padding-right: 10px;
-    padding-left: 5px;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    color: rgb(44, 46, 123);
-}
-
-.liveView:hover {
-    text-decoration: underline;
-}
-
-.viewCode {
+    grid-column: 1 / 1;
+    grid-row: 5 / 5;
+    font-family: 'Questrial', sans-serif;
     font-size: 14px;
+}
+
+.viewCodeQuiz {
     text-decoration: none;
-    text-align: left;
-    padding-right: 10px;
-    padding-left: 5px;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    color: rgb(44, 46, 123);
+    padding-left: 100px;
+    grid-column: 1 / 1;
+    grid-row: 5 / 5;
+    font-family: 'Questrial', sans-serif;
+    font-size: 14px;
 }
 
-.viewCode:hover {
-    text-decoration: underline;
+.grid-item-2 {
+    grid-column: 1 / 1;
+    grid-row: 6 / 6;
 }
 
-.transoceanCaseStudyBox {
-    background-color: rgba(229, 232, 235, 0.776);
-    border-radius: 5px;
-    margin-top: 20px;
+.campingTitle {
+    grid-column: 1 / 1;
+    grid-row: 7 / 7;
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px;
 }
 
-#transoceanScreenshot {
-    width: 100%;
-    border-radius: 5px;
+.campingDescription {
+    grid-column: 1 / 1;
+    grid-row: 8 / 8;
+    font-family: 'Questrial', sans-serif;
+    font-size: 14px;
+    word-break: break-word;
 }
 
-.stateFairBox {
-    background-color: rgba(229, 232, 235, 0.776);
-    border-radius: 5px;
-    margin-top: 20px;
+.campingTools {
+    grid-column: 1 / 1;
+    grid-row: 9 / 9;
+    font-family: 'Questrial', sans-serif;
+    font-size: 14px;
 }
 
-#stateFairScreenshot {
-    width: 100%;
-    border-radius: 5px;
+.liveViewCamping {
+    text-decoration: none;
+    grid-column: 1 / 1;
+    grid-row: 10 / 10;
+    font-family: 'Questrial', sans-serif;
+    font-size: 14px;
 }
 
-.outdoorHomeCaseStudyBox {
-    background-color: rgba(229, 232, 235, 0.776);
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-#outdoorHomeScreenshot {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.shippingContainerTLMBox {
-    background-color: rgba(229, 232, 235, 0.776);
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-#shippingContainerTLMScreenshot {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.landRoverBox {
-    background-color: rgba(229, 232, 235, 0.776);
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-#landRoverScreenshot {
-    width: 100%;
-    border-radius: 5px;
+.viewCodeCamping {
+    text-decoration: none;
+    padding-left: 100px;
+    grid-column: 1 / 1;
+    grid-row: 10 / 10;
+    font-family: 'Questrial', sans-serif;
+    font-size: 14px;
 }
 
 #aboutMeHeading {
@@ -343,6 +382,13 @@ footer a {
         font-size: 24px;
         line-height: 30px;
     }
+
+    .introTools {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        line-height: 30px;
+    }
     
     .button {
         text-decoration: none;
@@ -360,133 +406,151 @@ footer a {
         font-size: 38px;
     }
 
-    .quizAppBox {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 80%;
-    }
-    
-    #quizAppScreenshot {
-        width: 100%;
-        margin-top: 0px;
-    }
-    
-    .featuredImageTitle {
+    #writingSamples {
         text-align: left;
-        font-size: 24px;
+        font-family: 'Questrial', sans-serif;
+        font-size: 30px;
         line-height: 30px;
-        padding-left: 5px;
-    }
-    
-    .featuredImageDescription {
-        text-align: left;
-        font-size: 20px;
-        line-height: 24px;
-        padding-left: 5px;
     }
 
-    .toolsUsed {
+    .grid-container-writing {
+        display: grid;
+        padding-left: 130px;
+        grid-row-gap: 20px;
+    }
+
+    .grid-item-a {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    .grid-item-b {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+
+    .grid-item-c {
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+
+    .grid-item-d {
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+
+    .grid-item-e {
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+    }
+
+    .grid-item-f {
+        grid-column: 1 / 1;
+        grid-row: 6 / 6;
+    }
+
+    .grid-item-a:hover {
+        opacity: 0.5;
+    }
+
+    #webDev {
+        text-align: left;
+        font-family: 'Questrial', sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .grid-container-webdev {
+        display: grid;
+        padding-left: 130px;
+        grid-row-gap: 20px;
+    }
+
+    .grid-item-1 {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+    
+    .quizTitle {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+        font-family: 'Questrial', sans-serif;
+        font-size: 18px;
+    }
+
+    .quizDescription {
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+        font-family: 'Questrial', sans-serif;
         font-size: 16px;
-        line-height: 20px;
-        text-decoration: none;
-        text-align: left;
-        padding-right: 10px;
-        padding-left: 5px;
     }
 
-    .liveView {
+    .quizTools {
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+        font-family: 'Questrial', sans-serif;
         font-size: 16px;
-        line-height: 20px;
-        text-decoration: none;
-        text-align: left;
-        padding-right: 10px;
-        padding-left: 5px;
     }
-    
-    .viewCode {
+
+    .liveViewQuiz {
+        text-decoration: none;
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+        font-family: 'Questrial', sans-serif;
         font-size: 16px;
-        line-height: 20px;
+    }
+    
+    .viewCodeQuiz {
         text-decoration: none;
-        text-align: left;
-        padding-right: 10px;
-        padding-left: 5px;
+        padding-left: 100px;
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+        font-family: 'Questrial', sans-serif;
+        font-size: 16px;
     }
 
-    .transoceanCaseStudyBox {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 80%;
-        border-radius: 5px;
+    .grid-item-2 {
+        grid-column: 1 / 1;
+        grid-row: 6 / 6;
+    }
+
+    .campingTitle {
+        grid-column: 1 / 1;
+        grid-row: 7 / 7;
+        font-family: 'Questrial', sans-serif;
+        font-size: 18px;
+    }
+
+    .campingDescription {
+        grid-column: 1 / 1;
+        grid-row: 8 / 8;
+        font-family: 'Questrial', sans-serif;
+        font-size: 16px;
+        word-break: break-word;
+    }
+
+    .campingTools {
+        grid-column: 1 / 1;
+        grid-row: 9 / 9;
+        font-family: 'Questrial', sans-serif;
+        font-size: 16px;
+    }
+
+    .liveViewCamping {
+        text-decoration: none;
+        grid-column: 1 / 1;
+        grid-row: 10 / 10;
+        font-family: 'Questrial', sans-serif;
+        font-size: 16px;
     }
     
-    #transoceanScreenshot {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .stateFairBox {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 80%;
-        border-radius: 5px;
-    }
-    
-    #stateFairScreenshot {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .outdoorHomeCaseStudyBox {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 80%;
-        border-radius: 5px;
-    }
-
-    #outdoorHomeScreenshot {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .shippingContainerTLMBox {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 80%;
-        border-radius: 5px;
-    }
-    
-    #shippingContainerTLMScreenshot {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .landRoverBox {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 80%;
-        border-radius: 5px;
-    }
-    
-    #landRoverScreenshot {
-        width: 100%;
-        border-radius: 5px;
+    .viewCodeCamping {
+        text-decoration: none;
+        padding-left: 100px;
+        grid-column: 1 / 1;
+        grid-row: 10 / 10;
+        font-family: 'Questrial', sans-serif;
+        font-size: 16px;
     }
 
     #aboutMeHeading {
@@ -598,26 +662,36 @@ footer a {
     #introName {
         position: relative;
         margin-bottom: 0;
-        right: 19%;
-        bottom: 275px; 
+        right: 26.5%;
+        bottom: 450px; 
         font-size: 52px;
     }
 
     #descriptiveWords {
         position: relative;
         margin-top: 0;
-        right: 13%;
-        bottom: 250px;
+        right: 20.5%;
+        bottom: 415px;
     }
 
     .introDescription {
         position: relative;
         text-align: left;
-        width: 55%;
-        margin-left: auto;
+        width: 40%;
+        margin-left: 200px;
         margin-right: auto;
         margin-top: 0;
-        bottom: 100px;
+        top: -400px;
+    }
+
+    .introTools {
+        position: relative;
+        text-align: left;
+        width: 75%;
+        margin-left: 200px;
+        margin-right: auto;
+        margin-top: 0;
+        top: -400px;
     }
     
     .button {
@@ -633,7 +707,6 @@ footer a {
     }
 
     #portfolio {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -642,130 +715,156 @@ footer a {
         font-size: 38px;
     }
 
-    .quizAppBox {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 100px;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 40%;
-    }
-    
-    #quizAppScreenshot {
-        width: 100%;
-        margin-top: 0px;
-    }
-    
-    .featuredImageTitle {
+    #writingSamples {
         text-align: left;
-        font-size: 24px;
+        font-family: 'Questrial', sans-serif;
+        font-size: 30px;
         line-height: 30px;
-        padding-left: 5px;
-    }
-    
-    .featuredImageDescription {
-        text-align: left;
-        font-size: 20px;
-        line-height: 24px;
-        padding-left: 5px;
     }
 
-    .toolsUsed {
+    .grid-container-writing {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        padding: 10px;
+        grid-row-gap: 20px;
+        margin-left: 55px;
+    }
+
+    .grid-item-a {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    .grid-item-b {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+
+    .grid-item-c {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+
+    .grid-item-d {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+
+    .grid-item-e {
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+
+    .grid-item-f {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+    }
+
+    .grid-item-a:hover {
+        opacity: 0.5;
+    }
+
+    #webDev {
+        text-align: left;
+        font-family: 'Questrial', sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .grid-container-webdev {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        padding: 10px;
+        grid-column-gap: 50px;
+        margin-left: 55px;
+    }
+
+    .grid-item-1 {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+    
+    .quizTitle {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+        font-family: 'Questrial', sans-serif;
+        font-size: 18px;
+    }
+
+    .quizDescription {
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+        font-family: 'Questrial', sans-serif;
         font-size: 16px;
-        line-height: 20px;
-        text-decoration: none;
-        text-align: left;
-        padding-right: 10px;
-        padding-left: 5px;
     }
 
-    .liveView {
+    .quizTools {
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+        font-family: 'Questrial', sans-serif;
         font-size: 16px;
-        line-height: 20px;
-        text-decoration: none;
-        text-align: left;
-        padding-right: 10px;
-        padding-left: 5px;
-        margin-bottom: 0px;
     }
-    
-    .viewCode {
+
+    .liveViewQuiz {
+        text-decoration: none;
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+        font-family: 'Questrial', sans-serif;
         font-size: 16px;
-        line-height: 20px;
+    }
+    
+    .viewCodeQuiz {
         text-decoration: none;
-        text-align: left;
-        padding-right: 10px;
-        padding-left: 5px;
+        padding-left: 100px;
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+        font-family: 'Questrial', sans-serif;
+        font-size: 16px;
     }
 
-    .transoceanCaseStudyBox {
-        display: block;
-        margin-left: auto;
-        margin-right: 50px;
-        margin-top: 100px;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 25%;
+    .grid-item-2 {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+
+    .campingTitle {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+        font-family: 'Questrial', sans-serif;
+        font-size: 18px;
+    }
+
+    .campingDescription {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+        font-family: 'Questrial', sans-serif;
+        font-size: 16px;
+    }
+
+    .campingTools {
+        grid-column: 2 / 2;
+        grid-row: 4 / 4;
+        font-family: 'Questrial', sans-serif;
+        font-size: 16px;
+    }
+
+    .liveViewCamping {
+        text-decoration: none;
+        grid-column: 2 / 2;
+        grid-row: 5 / 5;
+        font-family: 'Questrial', sans-serif;
+        font-size: 16px;
     }
     
-    #transoceanScreenshot {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .stateFairBox {
-        display: block;
-        margin-left: auto;
-        margin-right: 50px;
-        margin-top: 100px;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 25%;
-    }
-
-    #stateFairScreenshot {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .outdoorHomeCaseStudyBox {
-        display: block;
-        margin-left: 60px;
-        margin-right: 5px;
-        margin-top: 100px;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 25%;
-    }
-
-    #outdoorHomeScreenshot {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .shippingContainerTLMBox {
-        display: block;
-        margin-left: 120px;
-        margin-right: 5px;
-        margin-top: 100px;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 25%;
-    }
-    
-    #shippingContainerTLMScreenshot {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .landRoverBox {
-        display: block;
-        margin-left: 120px;
-        margin-right: 0px;
-        margin-top: 100px;
-        background-color: rgba(229, 232, 235, 0.776);
-        width: 25%;
-    }
-    
-    #landRoverScreenshot {
-        width: 100%;
-        border-radius: 5px;
+    .viewCodeCamping {
+        text-decoration: none;
+        padding-left: 100px;
+        grid-column: 2 / 2;
+        grid-row: 5 / 5;
+        font-family: 'Questrial', sans-serif;
+        font-size: 16px;
     }
 
     #aboutMeHeading {
@@ -822,9 +921,4 @@ footer a {
         display: inline;
     }
     
-    footer a {
-        text-decoration: none;
-        padding-right: 50px;
-        color: white;
-    }
 }
